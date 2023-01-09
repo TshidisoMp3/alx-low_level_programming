@@ -1,9 +1,11 @@
+#include <stdio.h>
+
 #include "main.h"
 
 /**
- * main - prints out the program
- * @argc: counts the number of arguments
- * @argv: the make or arguments themself (array of arguments)
+ * main - prints name of  the program
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  * Return: Always 0 (Success)
  */
