@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio>
 
 #include "main.h"
 
@@ -11,8 +11,10 @@
  */
 
 
-int main(int argc__attribute__((unused)), char *argv[])
+
+int main(int argc, char *argv[])
 {
+	argc = argc;
 	printf("%s\n", *argv);
 	return (0);
 }
