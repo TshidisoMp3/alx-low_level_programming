@@ -9,7 +9,7 @@
  * Return: null
  */
 
-int **alloc-grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **grid, i, j;
 
