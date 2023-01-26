@@ -2,22 +2,21 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strchr - finds the location of the string
+ * @s: the string
+ * @c: the character
  *
- * Return: Always 0.
+ * Return: a pointer to a character
  */
 
 char *_strchr(char *s, char c);
-
 {
-  char *s = "hello";
-  char *f;
+	int i;
 
-  f = _strchr(s, 'l');
-
-  if (f != NULL)
-    {
-      printf("%s\n", f);
-    }
-  return (0);
+	for (i=0; s[i] != '\0' ; i++)
+	{
+		if (s[i] == c)
+			return (&s[i]);
+	}
+	return (0);
 }
