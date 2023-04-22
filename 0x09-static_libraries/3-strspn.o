@@ -1,0 +1,6 @@
+#include "main.h"
+
+/**
+ *_strspn - the entry point
+ *@s: an input
+ *
