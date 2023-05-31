@@ -13,7 +13,7 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%c\n", argv);
+	printf("%d\n", argv);
 
 	return(0);
 }
