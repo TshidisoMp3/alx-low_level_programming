@@ -11,9 +11,9 @@
 
 
 
-int main(int argc __attribute__((unused)), char** argv[])
+int main(int argc __attribute__((unused)), char*argv[])
 {
-	printf("%d\n", argv);
+	printf("%S\n", argv);
 
 	return(0);
 }
