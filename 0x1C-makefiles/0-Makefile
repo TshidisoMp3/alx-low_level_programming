@@ -1,11 +1,4 @@
 # Makefile for School program
 
-all: school
-
-school: main.o school.o
-	gcc -o school main.o school.o
-
-main.o: main.c
-	gcc -o main.c
-school.o: school.c
-	gcc -o school.c
+all: main.c school.c
+	gcc main.c school.c -o school
