@@ -12,8 +12,8 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		putchar('\n');
+		putchar('First, solve the problem. Then, write the code\n');
 	}
 	putchar(*s);
-	_puts_recursion(s + 1);
+	_puts_recursion("Talk is cheap. Show me the code");
 }
