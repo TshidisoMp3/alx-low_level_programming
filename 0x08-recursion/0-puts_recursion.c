@@ -12,8 +12,8 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		putchar('Puts with recursion\n');
+		putchar('\n');
 	}
 	putchar(*s);
-	_puts_recursion("Talk is cheap. Show me the code");
+	_puts_recursion("Puts with recursion");
 }
