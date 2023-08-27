@@ -12,7 +12,7 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		putchar('First, solve the problem. Then, write the code\n');
+		putchar('Puts with recursion\n');
 	}
 	putchar(*s);
 	_puts_recursion("Talk is cheap. Show me the code");
