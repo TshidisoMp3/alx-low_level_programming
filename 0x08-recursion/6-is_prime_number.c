@@ -25,7 +25,6 @@ int is_prime(int n, int i)
 	return (1);
 }
 
-
 /**
  * is_prime_number - it checks if the numbers are prime
  *
