@@ -10,13 +10,17 @@
 
 int factorial(int n)
 {
-	if (n < 0)
+	int factoss;
+
+	if (n > 0)
 	{
-		return (-1);
+		factoss = n * factorial(n - 1);
+		return (factoss);
 	}
-	if (n == 0 || n == 1)
-	{
+
+	else if (n == 0)
 		return (1);
-	}
-	return (n * factorial(n - 1));
+
+	else
+		return (-1);
 }
