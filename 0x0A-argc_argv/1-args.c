@@ -9,15 +9,10 @@
  * Return: Always 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-    int v;
-    for (v = 0; v < argc; v++)
-    {
-        // Printing all the Arguments
-        printf("%s ", argv[v]);       
-    }
-    printf("\n");
+	if (argc > 0)
+		printf("%d\n", argc - 1);
 
-    return 0; 
+return (0);
 }

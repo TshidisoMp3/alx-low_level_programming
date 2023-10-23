@@ -9,18 +9,15 @@
  * Return: Always 0
  */
 
-int main()
+int main(int argc, char *argv[])
 {
-    int v1, v2, ans;
+	if (argc - 1 != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
-    printf("Enter first No: ");
-    scanf("%d", v1);
-
-    printf("Enter Secound No: ");
-    scanf("%d", v2);
-
-    ans= v1*v2;
-    printf("The answer is: %d\n", ans);
-
-    return 0;
+return (0);
 }

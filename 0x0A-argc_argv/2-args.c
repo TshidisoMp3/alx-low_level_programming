@@ -11,9 +11,13 @@
 
 int main(int argc, char *argv[])
 {
-	int countsA;
-	for(countsA=0; countsA<argc; countsA++)
-		printf("argv[%2d]: %s\n",countsA,argv[countsA]);
-	
-	return 0;
+	int bv;
+
+	if (argc > 0)
+	{
+		for (bv = 0; bv < argc; ++bv)
+			printf("%s\n", argv[bv]);
+	}
+
+return (0);
 }
