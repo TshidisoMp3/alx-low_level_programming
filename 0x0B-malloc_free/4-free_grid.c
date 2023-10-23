@@ -9,13 +9,12 @@
  * Return: nothing, frees memory
  */
 
-void  free_grid(int **grid, int height)
+void free_grid(int **grid, int height)
 {
 	int tip;
 
 	for (tip = 0; tip < height; tip++)
 		free(grid[tip]);
-	
 
 	free(grid);
 }
