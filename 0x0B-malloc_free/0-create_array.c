@@ -13,7 +13,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arraysss;
-	unsigned int dexil;
+	int dexil;
 
 	if (size == 0)
 		return (NULL);
