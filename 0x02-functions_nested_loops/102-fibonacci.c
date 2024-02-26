@@ -23,3 +23,9 @@ void generateFibonacci(int n) {
     }
     printf("\n");
 }
+
+int main(void)
+{
+    generateFibonacci(50);
+    return (0);
+}
