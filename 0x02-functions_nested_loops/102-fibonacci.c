@@ -5,21 +5,21 @@
  * Return: always 0
  */
 
-int main(void) {
-    long int i, j, count, sum, temp;
-
-    i = 0;
-    j = 1;
-    count = 0;
-
-    while (count < 50) {
-        temp = j;
-        j += i;
-        i = temp;
-        printf("%ld", j);
-        if (count < 49) {
-            printf(", ");
+void generateFibonacci(int n) {
+    int i;
+    long int a = 0, b = 1, c = 0;
+    
+    for (i = 0; i < n; i++) {
+        if (i == 0) {
+        printf("%ld", a);
+        } else if (i == 1) {
+        printf(", %ld", b);
+        } else {
+        c = a + b;
+        a = b;
+        b = c;
+        printf(", %ld", c);
         }
-        count++;
     }
+    printf("\n");
 }
